@@ -24,6 +24,7 @@ export class ImageNode extends VNode {
 
     constructor(src: string, alt: string) {
         super();
+        this.type = 'image';
         this.src = src;
         this.alt = alt;
     }
@@ -41,6 +42,7 @@ export class TextNode extends VNode {
     text: string;
     constructor(text: string) {
         super();
+        this.type = 'text';
         this.text = text;
     }
 
